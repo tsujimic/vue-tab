@@ -8,7 +8,7 @@ const count = ref(0)
 <template>
     <div>
         <p>Posts component</p>
-        <div class="flex flex-col py-5">
+        <div class="py-5">
             <div>
                 <span>count: {{ count }}</span>
             </div>
