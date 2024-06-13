@@ -7,9 +7,9 @@ import Archive from './items/Archive.vue'
 const currentTab = ref(0)
 
 const tabs = [
-  { name: 'Home', component: Home } ,
-  { name: 'Posts', component: Posts } ,
-  { name: 'Archive', component: Archive } ,
+  { name: '#1 Home', component: Home } ,
+  { name: '#2 Posts', component: Posts } ,
+  { name: '#3 Archive', component: Archive } ,
 ]
 
 </script>
@@ -31,7 +31,7 @@ const tabs = [
             {{ tab.name }}
             </button>
             <KeepAlive>
-                <component :is="tabs[currentTab].component" class="tab"></component>
+                <component :is="tabs[currentTab].component" class="tab" :msg="tabs[currentTab].name"></component>
             </KeepAlive>
         </div>
 
